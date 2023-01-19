@@ -14,10 +14,7 @@ class ImageUpload extends Model
         $this->image = $file;
 
         if($this->validate()){
-            if(file_exists(Yii::getAlias('@web') . 'uploads/' . $currentImage) &&
-                is_file(Yii::getAlias('@web') . 'uploads/' . $currentImage)){
-                unlink(Yii::getAlias('@web') . 'uploads/' . $currentImage);
-            }
+            $this->deleteCurrentImage($currentImage);
 
             $filename = strtolower(md5(uniqid($file->baseName)) . "." . $file->extension);
             $file->saveAs(Yii::getAlias('@web') . 'uploads/' . $filename);
@@ -33,5 +30,13 @@ class ImageUpload extends Model
             [['image'], 'required'],
             [['image'],'file', 'extensions' => 'jpg,png']
         ];
+    }
+
+    public function deleteCurrentImage($currentImage)
+    {
+        if (file_exists(Yii::getAlias('@web') . 'uploads/' . $currentImage) &&
+            is_file(Yii::getAlias('@web') . 'uploads/' . $currentImage)) {
+            unlink(Yii::getAlias('@web') . 'uploads/' . $currentImage);
+        }
     }
 }

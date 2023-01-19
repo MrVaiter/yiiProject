@@ -21,8 +21,12 @@ class AppAsset extends AssetBundle
     public $baseUrl = '@web';
     public $css = [
         'css/site.css',
+        'css/style.css',
+        'https://cdnjs.cloudflare.com/ajax/libs/font-awesome.min.css',
     ];
-    public $js = [];
+    public $js = [
+        'https://kit.fontawesome.com/yourcode.js',
+    ];
     public $depends = [
         'yii\web\YiiAsset',
         'yii\bootstrap5\BootstrapAsset'

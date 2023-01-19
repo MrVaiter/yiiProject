@@ -4,13 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5400ac25-770c-4bd2-85d6-9e610c77e5c8" name="Changes" comment="Create a drop-down list for topic and user">
-      <change afterPath="$PROJECT_DIR$/basic/modules/admin/views/user/image.php" afterDir="false" />
+    <list default="true" id="5400ac25-770c-4bd2-85d6-9e610c77e5c8" name="Changes" comment="Update User">
+      <change afterPath="$PROJECT_DIR$/basic/web/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/basic/models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/basic/models/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/basic/modules/admin/controllers/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/basic/modules/admin/controllers/UserController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/basic/modules/admin/views/user/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/basic/modules/admin/views/user/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/basic/modules/admin/views/user/view.php" beforeDir="false" afterPath="$PROJECT_DIR$/basic/modules/admin/views/user/view.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic/views/layouts/main.php" beforeDir="false" afterPath="$PROJECT_DIR$/basic/views/layouts/main.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic/views/site/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/basic/views/site/index.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,6 +46,9 @@
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Проекти\PHPCourseWork\basic\modules\admin\views\user" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Проекти\PHPCourseWork\basic\web" />
       <recent name="C:\Проекти\PHPCourseWork\basic\modules\admin\views" />
@@ -74,7 +75,7 @@
       <workItem from="1674119322760" duration="3339000" />
       <workItem from="1674127769511" duration="8646000" />
       <workItem from="1674155122954" duration="3137000" />
-      <workItem from="1674163776896" duration="2855000" />
+      <workItem from="1674163776896" duration="3153000" />
     </task>
     <task id="LOCAL-00001" summary="Connect to database">
       <created>1674124534372</created>
@@ -195,7 +196,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674165894344</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Update User">
+      <created>1674166682997</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1674166682997</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -230,6 +238,7 @@
     <MESSAGE value="Add redirect after uploadig image" />
     <MESSAGE value="Create a mock image functionality" />
     <MESSAGE value="Create a drop-down list for topic and user" />
-    <option name="LAST_COMMIT_MESSAGE" value="Create a drop-down list for topic and user" />
+    <MESSAGE value="Update User" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update User" />
   </component>
 </project>

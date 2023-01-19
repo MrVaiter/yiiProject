@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5400ac25-770c-4bd2-85d6-9e610c77e5c8" name="Changes" comment="Add a sidebar">
-      <change afterPath="$PROJECT_DIR$/basic/views/site/single.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/basic/controllers/SiteController.php" beforeDir="false" afterPath="$PROJECT_DIR$/basic/controllers/SiteController.php" afterDir="false" />
+    <list default="true" id="5400ac25-770c-4bd2-85d6-9e610c77e5c8" name="Changes" comment="Create Blog page">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic/views/site/single.php" beforeDir="false" afterPath="$PROJECT_DIR$/basic/views/site/single.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic/web/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/basic/web/css/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,7 +74,7 @@
       <workItem from="1674119322760" duration="3339000" />
       <workItem from="1674127769511" duration="8646000" />
       <workItem from="1674155122954" duration="3137000" />
-      <workItem from="1674163776896" duration="4616000" />
+      <workItem from="1674163776896" duration="5022000" />
     </task>
     <task id="LOCAL-00001" summary="Connect to database">
       <created>1674124534372</created>
@@ -215,7 +216,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674168192889</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="Create Blog page">
+      <created>1674168594361</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1674168594361</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -253,6 +261,7 @@
     <MESSAGE value="Update User" />
     <MESSAGE value="Add style.css" />
     <MESSAGE value="Add a sidebar" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add a sidebar" />
+    <MESSAGE value="Create Blog page" />
+    <option name="LAST_COMMIT_MESSAGE" value="Create Blog page" />
   </component>
 </project>

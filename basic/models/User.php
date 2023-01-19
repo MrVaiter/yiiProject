@@ -32,6 +32,9 @@ class User extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
+            [['name','login','password'], 'required'],
+            ['login','email'],
+            [['name','login','password'], 'string'],
             [['name', 'login', 'password', 'image'], 'string', 'max' => 255],
         ];
     }
@@ -68,5 +71,32 @@ class User extends \yii\db\ActiveRecord
     public function getComments()
     {
         return $this->hasMany(Comment::class, ['user_id' => 'id']);
+    }
+
+    public function saveImage($filename)
+    {
+        $this->image = $filename;
+        return $this->save(false);
+    }
+
+    public function getImage()
+    {
+        if($this->image)
+        {
+            return '/uploads/' . $this->image;
+        }
+        return '/no-image.png';
+    }
+
+    public function deleteImage()
+    {
+        $imageUploadModel = new ImageUpload();
+        $imageUploadModel->deleteCurrentImage($this->image);
+    }
+
+    public function beforeDelete()
+    {
+        $this->deleteImage();
+        return parent::beforeDelete();
     }
 }

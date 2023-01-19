@@ -4,12 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5400ac25-770c-4bd2-85d6-9e610c77e5c8" name="Changes" comment="Add redirect after uploadig image">
-      <change afterPath="$PROJECT_DIR$/basic/web/no-image.png" afterDir="false" />
+    <list default="true" id="5400ac25-770c-4bd2-85d6-9e610c77e5c8" name="Changes" comment="Create a mock image functionality">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/basic/models/Article.php" beforeDir="false" afterPath="$PROJECT_DIR$/basic/models/Article.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/basic/models/ImageUpload.php" beforeDir="false" afterPath="$PROJECT_DIR$/basic/models/ImageUpload.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/basic/modules/admin/views/article/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/basic/modules/admin/views/article/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic/modules/admin/views/article/_form.php" beforeDir="false" afterPath="$PROJECT_DIR$/basic/modules/admin/views/article/_form.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic/modules/admin/views/article/create.php" beforeDir="false" afterPath="$PROJECT_DIR$/basic/modules/admin/views/article/create.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic/modules/admin/views/article/update.php" beforeDir="false" afterPath="$PROJECT_DIR$/basic/modules/admin/views/article/update.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,7 +72,7 @@
       <workItem from="1674119322760" duration="3339000" />
       <workItem from="1674127769511" duration="8646000" />
       <workItem from="1674155122954" duration="3137000" />
-      <workItem from="1674163776896" duration="818000" />
+      <workItem from="1674163776896" duration="1759000" />
     </task>
     <task id="LOCAL-00001" summary="Connect to database">
       <created>1674124534372</created>
@@ -180,7 +179,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674157144923</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Create a mock image functionality">
+      <created>1674164657394</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1674164657394</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -213,6 +219,7 @@
     <MESSAGE value="Add image replacement ability" />
     <MESSAGE value="Add validation for the picture" />
     <MESSAGE value="Add redirect after uploadig image" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add redirect after uploadig image" />
+    <MESSAGE value="Create a mock image functionality" />
+    <option name="LAST_COMMIT_MESSAGE" value="Create a mock image functionality" />
   </component>
 </project>

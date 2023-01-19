@@ -4,11 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5400ac25-770c-4bd2-85d6-9e610c77e5c8" name="Changes" comment="Edit migration files">
-      <change beforePath="$PROJECT_DIR$/basic/migrations/m230119_113534_create_topic_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/basic/migrations/m230119_113534_create_topic_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/basic/migrations/m230119_113639_create_user_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/basic/migrations/m230119_113639_create_user_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/basic/migrations/m230119_113650_create_article_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/basic/migrations/m230119_113650_create_article_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/basic/migrations/m230119_113657_create_comment_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/basic/migrations/m230119_113657_create_comment_table.php" afterDir="false" />
+    <list default="true" id="5400ac25-770c-4bd2-85d6-9e610c77e5c8" name="Changes" comment="Perform first migration">
+      <change afterPath="$PROJECT_DIR$/basic/.htaccess" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic/config/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/basic/config/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic/web/.htaccess" beforeDir="false" afterPath="$PROJECT_DIR$/basic/web/.htaccess" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,6 +45,16 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
+  <component name="RunManager">
+    <configuration name="index.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/basic/web/index.php">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="PHP Script.index.php" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -54,7 +64,7 @@
       <option name="presentableId" value="Default" />
       <updated>1674119321516</updated>
       <workItem from="1674119322760" duration="3339000" />
-      <workItem from="1674127769511" duration="1175000" />
+      <workItem from="1674127769511" duration="3211000" />
     </task>
     <task id="LOCAL-00001" summary="Connect to database">
       <created>1674124534372</created>
@@ -77,7 +87,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674128624374</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Perform first migration">
+      <created>1674129110837</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1674129110837</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -98,6 +115,7 @@
     <MESSAGE value="Connect to database" />
     <MESSAGE value="Create migrations" />
     <MESSAGE value="Edit migration files" />
-    <option name="LAST_COMMIT_MESSAGE" value="Edit migration files" />
+    <MESSAGE value="Perform first migration" />
+    <option name="LAST_COMMIT_MESSAGE" value="Perform first migration" />
   </component>
 </project>

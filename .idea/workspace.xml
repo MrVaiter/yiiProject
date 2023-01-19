@@ -4,13 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5400ac25-770c-4bd2-85d6-9e610c77e5c8" name="Changes" comment="Add rules for Article">
-      <change afterPath="$PROJECT_DIR$/basic/models/ImageUpload.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/basic/modules/admin/views/article/image.php" afterDir="false" />
+    <list default="true" id="5400ac25-770c-4bd2-85d6-9e610c77e5c8" name="Changes" comment="Add image uploading ability">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/basic/models/Article.php" beforeDir="false" afterPath="$PROJECT_DIR$/basic/models/Article.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic/models/ImageUpload.php" beforeDir="false" afterPath="$PROJECT_DIR$/basic/models/ImageUpload.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/basic/modules/admin/controllers/ArticleController.php" beforeDir="false" afterPath="$PROJECT_DIR$/basic/modules/admin/controllers/ArticleController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/basic/modules/admin/views/article/view.php" beforeDir="false" afterPath="$PROJECT_DIR$/basic/modules/admin/views/article/view.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,7 +69,7 @@
       <updated>1674119321516</updated>
       <workItem from="1674119322760" duration="3339000" />
       <workItem from="1674127769511" duration="8646000" />
-      <workItem from="1674155122954" duration="938000" />
+      <workItem from="1674155122954" duration="1276000" />
     </task>
     <task id="LOCAL-00001" summary="Connect to database">
       <created>1674124534372</created>
@@ -151,7 +148,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674138187211</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Add image uploading ability">
+      <created>1674156273281</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1674156273281</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -180,6 +184,7 @@
     <MESSAGE value="Edit layout for admin" />
     <MESSAGE value="Create admin.php" />
     <MESSAGE value="Add rules for Article" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add rules for Article" />
+    <MESSAGE value="Add image uploading ability" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add image uploading ability" />
   </component>
 </project>

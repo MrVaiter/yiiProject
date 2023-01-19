@@ -4,7 +4,7 @@ use yii\db\Migration;
 /**
  * Handles the creation of table `{{%comment}}`.
  */
-class m200720_142204_create_comment_table extends Migration
+class m230119_113657_create_comment_table extends Migration
 {
     /**
      * {@inheritdoc}

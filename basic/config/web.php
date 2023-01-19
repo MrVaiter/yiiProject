@@ -52,7 +52,11 @@ $config = [
                 '<action>'=>'site/<action>'
             ),
         ],
-
+    ],
+    'modules' => [
+        'admin' => [
+            'class' => 'app\modules\admin\Module',
+        ],
     ],
     'params' => $params,
 ];

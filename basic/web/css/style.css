@@ -115,3 +115,67 @@ span, p, input {
     transition: all 0.3s;
     font-weight: 600;
 }
+
+.widget {
+    padding: 37px 30px;
+    margin-bottom: 35px;
+    background-color: #fff;
+    border: 1px solid #eee;
+}
+
+.widget-title {
+    font-size: 18px;
+    margin: 0 0 25px;
+    letter-spacing: 0.5px;
+    color: #333333;
+}
+
+.widget .popular-post:first-of-type {
+    padding-top: 0;
+}
+
+.popular-post {
+    border-bottom: 1px solid #eee;
+    padding: 25px 0 20px;
+}
+
+.popular-img {
+    position: relative;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.popular-img img {
+    width: 100%;
+}
+
+img {
+    max-width: 100%;
+}
+
+.p-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    -webkit-transition: all 0.44s;
+    transition: all 0.44s;
+}
+
+.p-content a {
+    font-size: 12px;
+    color: #333333;
+    text-decoration: none;
+    display: block;
+    font-weight: 600;
+    transition: all 0.44s;
+}
+
+.p-content span {
+    color: #666666;
+    font-size: 12px;
+    font-style: italic;
+}

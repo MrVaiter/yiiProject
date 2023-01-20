@@ -4,14 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5400ac25-770c-4bd2-85d6-9e610c77e5c8" name="Changes" comment="Use pagination">
-      <change afterPath="$PROJECT_DIR$/basic/views/site/ topic.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/basic/controllers/SiteController.php" beforeDir="false" afterPath="$PROJECT_DIR$/basic/controllers/SiteController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/basic/views/site/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/basic/views/site/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/basic/views/site/right.php" beforeDir="false" afterPath="$PROJECT_DIR$/basic/views/site/right.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/basic/views/site/single.php" beforeDir="false" afterPath="$PROJECT_DIR$/basic/views/site/single.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/basic/web/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/basic/web/css/style.css" afterDir="false" />
+    <list default="true" id="5400ac25-770c-4bd2-85d6-9e610c77e5c8" name="Changes" comment="Display article and category">
+      <change afterPath="$PROJECT_DIR$/basic/controllers/AuthController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic/config/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/basic/config/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,7 +75,7 @@
       <workItem from="1674119322760" duration="3339000" />
       <workItem from="1674127769511" duration="8646000" />
       <workItem from="1674155122954" duration="3137000" />
-      <workItem from="1674163776896" duration="9388000" />
+      <workItem from="1674163776896" duration="9732000" />
     </task>
     <task id="LOCAL-00001" summary="Connect to database">
       <created>1674124534372</created>
@@ -243,7 +238,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674169891325</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="Display article and category">
+      <created>1674174661690</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1674174661690</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -284,6 +286,7 @@
     <MESSAGE value="Create Blog page" />
     <MESSAGE value="Create Comment" />
     <MESSAGE value="Use pagination" />
-    <option name="LAST_COMMIT_MESSAGE" value="Use pagination" />
+    <MESSAGE value="Display article and category" />
+    <option name="LAST_COMMIT_MESSAGE" value="Display article and category" />
   </component>
 </project>

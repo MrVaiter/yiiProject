@@ -23,6 +23,7 @@ $config = [
         'user' => [
             'identityClass' => 'app\models\User',
             'enableAutoLogin' => true,
+            'loginUrl' => ['auth/login']
         ],
         'errorHandler' => [
             'errorAction' => 'site/error',
@@ -43,19 +44,28 @@ $config = [
             ],
         ],
         'db' => $db,
-
         'urlManager' => [
             'enablePrettyUrl' => true,
             'showScriptName' => false,
             'rules' => array(
                 ''=>'site/index',
-                '<action>'=>'site/<action>'
+                '<action>'=>'site/<action>',
+                'admin/index' => 'admin/default/index',
+                'user/index' => 'user/default/index',
+                '<action>'=>'default/<action>',
+                '/login' => 'site/login',
+                '<controller:(post|comment)>/<id:\d+>/<action:(create|update|delete)>' => '<controller>/<action>',
+                '<controller:(post|comment)>/<id:\d+>' => '<controller>/view',
+                '<controller:(post|comment)>s' => '<controller>/index',
             ),
         ],
     ],
     'modules' => [
         'admin' => [
             'class' => 'app\modules\admin\Module',
+        ],
+        'user' => [
+            'class' => 'app\modules\user\Module',
         ],
     ],
     'params' => $params,

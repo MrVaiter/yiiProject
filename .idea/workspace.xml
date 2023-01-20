@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5400ac25-770c-4bd2-85d6-9e610c77e5c8" name="Changes" comment="Display article and category">
-      <change afterPath="$PROJECT_DIR$/basic/controllers/AuthController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/basic/config/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/basic/config/web.php" afterDir="false" />
+    <list default="true" id="5400ac25-770c-4bd2-85d6-9e610c77e5c8" name="Changes" comment="Add authorization">
+      <change afterPath="$PROJECT_DIR$/basic/views/site/singup.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,7 +74,7 @@
       <workItem from="1674119322760" duration="3339000" />
       <workItem from="1674127769511" duration="8646000" />
       <workItem from="1674155122954" duration="3137000" />
-      <workItem from="1674163776896" duration="9732000" />
+      <workItem from="1674163776896" duration="10116000" />
     </task>
     <task id="LOCAL-00001" summary="Connect to database">
       <created>1674124534372</created>
@@ -245,7 +244,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674174661690</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="Add authorization">
+      <created>1674175053958</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1674175053958</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -287,6 +293,7 @@
     <MESSAGE value="Create Comment" />
     <MESSAGE value="Use pagination" />
     <MESSAGE value="Display article and category" />
-    <option name="LAST_COMMIT_MESSAGE" value="Display article and category" />
+    <MESSAGE value="Add authorization" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add authorization" />
   </component>
 </project>

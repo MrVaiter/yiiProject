@@ -25,7 +25,7 @@ class ArticleController extends Controller
             parent::behaviors(),
             [
                 'verbs' => [
-                    'class' => VerbFilter::className(),
+                    'class' => VerbFilter::class,
                     'actions' => [
                         'delete' => ['POST'],
                     ],
@@ -73,7 +73,7 @@ class ArticleController extends Controller
         $model = new Article();
 
         if ($this->request->isPost) {
-            if ($model->load($this->request->post()) && $model->save()) {
+            if ($model->load($this->request->post()) && $model->saveArticle()) {
                 return $this->redirect(['view', 'id' => $model->id]);
             }
         } else {
@@ -96,7 +96,7 @@ class ArticleController extends Controller
     {
         $model = $this->findModel($id);
 
-        if ($this->request->isPost && $model->load($this->request->post()) && $model->save()) {
+        if ($this->request->isPost && $model->load($this->request->post()) && $model->saveArticle()) {
             return $this->redirect(['view', 'id' => $model->id]);
         }
 
@@ -135,13 +135,14 @@ class ArticleController extends Controller
         throw new NotFoundHttpException('The requested page does not exist.');
     }
 
-    public function actionSetImage($id)
-    {
-        $model = new ImageUpload();
+    /**
+     * @throws NotFoundHttpException
+     */
+    public function actionSetImage($id){
+        $model = new ImageUpload;
 
         if(Yii::$app->request->isPost){
             $article = $this->findModel($id);
-
             $file = UploadedFile::getInstance($model, 'image');
 
             if($article->saveImage($model->uploadFile($file, $article->image))){

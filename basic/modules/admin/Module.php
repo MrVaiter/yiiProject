@@ -39,7 +39,7 @@ class Module extends \yii\base\Module
                         'matchCallback' =>  function($rule, $action)
                         {
                             if (isset(Yii::$app->user->identity->login)){
-                                return (Yii::$app->user->identity->login == 'test@gmail.com');
+                                return (Yii::$app->user->identity->login == 'admin@gmail.com');
                             }
                             else{
                                 return false;

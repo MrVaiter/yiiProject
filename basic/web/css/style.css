@@ -3,7 +3,8 @@
 
 body {
     font-family: 'Open Sans', sans-serif;
-    background-image: url('img_4.png');
+    background-image: url('img.png');
+    background-size: contain;
 }
 
 .main-content {
@@ -16,7 +17,7 @@ body {
 }
 
 .post {
-    background: rgb(187,156,174, 0.9);
+    background: rgb(90, 127, 213);
     margin-bottom: 50px;
 }
 
@@ -139,14 +140,18 @@ span, p, input {
     padding: 37px 30px;
     margin-bottom: 35px;
 
-    background-color: rgb(187,156,174, 0.9);
+    background-color: rgba(62, 87, 145, 0.9);
 }
 
 .widget-title {
     font-size: 18px;
     margin: 0 0 25px;
     letter-spacing: 0.5px;
-    color: #333333;
+    color: #ffffff;
+}
+
+.widjet ul li a{
+    color: #ffffff;
 }
 
 .widget .popular-post:first-of-type {
@@ -186,7 +191,7 @@ img {
 
 .p-content a {
     font-size: 12px;
-    color: #333333;
+    color: #cccccc;
     text-decoration: none;
     display: block;
     font-weight: 600;
@@ -194,7 +199,7 @@ img {
 }
 
 .p-content span {
-    color: #666666;
+    color: #ffffff;
     font-size: 12px;
     font-style: italic;
 }
@@ -412,4 +417,8 @@ widget ul {
     background-repeat: no-repeat;
     background-position: right calc(0.375em + 0.1875rem) center;
     background-size: calc(0.75em + 0.375rem) calc(0.75em + 0.375rem);
+}
+
+.widget ul li a {
+    color: #ffffff;
 }

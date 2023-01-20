@@ -12,7 +12,7 @@
                 <h6>
                     <a href="<?= Url::toRoute(['/topic', 'id' => $article->topic->id]) ?>"> <?= $article->topic->name; ?></a>
                 </h6>
-                <h1 class="entry-title"><a href="# <a href="blog.html"><?= $article->title; ?></a> "><?= $article->title; ?></a>
+                <h1 class="entry-title"><a href="# <a href="blog.html"><?= $article->title; ?></a>
                 </h1>
             </header>
             <div class="entry-content">

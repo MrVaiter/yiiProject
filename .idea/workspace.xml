@@ -4,13 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5400ac25-770c-4bd2-85d6-9e610c77e5c8" name="Changes" comment="Hide admin module">
-      <change afterPath="$PROJECT_DIR$/basic/models/CommentForm.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/basic/models/Article.php" beforeDir="false" afterPath="$PROJECT_DIR$/basic/models/Article.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/basic/modules/admin/controllers/ArticleController.php" beforeDir="false" afterPath="$PROJECT_DIR$/basic/modules/admin/controllers/ArticleController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/basic/modules/admin/views/article/_form.php" beforeDir="false" afterPath="$PROJECT_DIR$/basic/modules/admin/views/article/_form.php" afterDir="false" />
-    </list>
+    <list default="true" id="5400ac25-770c-4bd2-85d6-9e610c77e5c8" name="Changes" comment="Create model CommentForm.php" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -78,7 +72,7 @@
       <workItem from="1674119322760" duration="3339000" />
       <workItem from="1674127769511" duration="8646000" />
       <workItem from="1674155122954" duration="3137000" />
-      <workItem from="1674163776896" duration="10823000" />
+      <workItem from="1674163776896" duration="11360000" />
     </task>
     <task id="LOCAL-00001" summary="Connect to database">
       <created>1674124534372</created>
@@ -269,7 +263,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674175476830</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="Create model CommentForm.php">
+      <created>1674175945601</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1674175945601</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -287,7 +288,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Edit migration files" />
     <MESSAGE value="Perform first migration" />
     <MESSAGE value="Update web.php" />
     <MESSAGE value="Add Admin module" />
@@ -312,6 +312,7 @@
     <MESSAGE value="Add authorization" />
     <MESSAGE value="Add registration" />
     <MESSAGE value="Hide admin module" />
-    <option name="LAST_COMMIT_MESSAGE" value="Hide admin module" />
+    <MESSAGE value="Create model CommentForm.php" />
+    <option name="LAST_COMMIT_MESSAGE" value="Create model CommentForm.php" />
   </component>
 </project>

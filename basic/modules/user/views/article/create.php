@@ -1,5 +1,7 @@
 <?php
 
+use app\models\Topic;
+use yii\helpers\ArrayHelper;
 use yii\helpers\Html;
 
 /** @var yii\web\View $this */
@@ -15,6 +17,7 @@ $this->params['breadcrumbs'][] = $this->title;
 
     <?= $this->render('_form', [
         'model' => $model,
+        'topics' => ArrayHelper::map(Topic::find()->all(),'id','name'),
     ]) ?>
 
 </div>

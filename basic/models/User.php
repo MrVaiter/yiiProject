@@ -86,7 +86,7 @@ class User extends \yii\db\ActiveRecord implements IdentityInterface
         {
             return '/uploads/' . $this->image;
         }
-        return '/no-image.png';
+        return '/no_image.png';
     }
 
     public function deleteImage()

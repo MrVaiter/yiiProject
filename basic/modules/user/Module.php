@@ -13,6 +13,7 @@ class Module extends \yii\base\Module
     /**
      * {@inheritdoc}
      */
+    public $layout = '/user';
     public $controllerNamespace = 'app\modules\user\controllers';
 
     /**

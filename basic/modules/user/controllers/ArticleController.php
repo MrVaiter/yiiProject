@@ -4,9 +4,12 @@ namespace app\modules\user\controllers;
 
 use app\models\Article;
 use app\models\ArticleSearch;
+use app\models\ImageUpload;
+use Yii;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
+use yii\web\UploadedFile;
 
 /**
  * ArticleController implements the CRUD actions for Article model.
@@ -39,7 +42,8 @@ class ArticleController extends Controller
     public function actionIndex()
     {
         $searchModel = new ArticleSearch();
-        $dataProvider = $searchModel->search($this->request->queryParams);
+        $params['ArticleSearch']['user_id'] = Yii::$app->user->id;
+        $dataProvider = $searchModel->search($params);
 
         return $this->render('index', [
             'searchModel' => $searchModel,
@@ -55,6 +59,8 @@ class ArticleController extends Controller
      */
     public function actionView($id)
     {
+        $this->check($id);
+
         return $this->render('view', [
             'model' => $this->findModel($id),
         ]);
@@ -70,7 +76,7 @@ class ArticleController extends Controller
         $model = new Article();
 
         if ($this->request->isPost) {
-            if ($model->load($this->request->post()) && $model->save()) {
+            if ($model->load($this->request->post()) && $model->saveArticle()) {
                 return $this->redirect(['view', 'id' => $model->id]);
             }
         } else {
@@ -96,6 +102,7 @@ class ArticleController extends Controller
         if ($this->request->isPost && $model->load($this->request->post()) && $model->save()) {
             return $this->redirect(['view', 'id' => $model->id]);
         }
+        $this->check($id);
 
         return $this->render('update', [
             'model' => $model,
@@ -130,5 +137,28 @@ class ArticleController extends Controller
         }
 
         throw new NotFoundHttpException('The requested page does not exist.');
+    }
+
+    public function check($id){
+        $model1 = $this->findModel($id);
+        if ($model1->user_id != Yii::$app->user->id){
+            throw new \yii\web\NotFoundHttpException();
+        }
+        return true;
+    }
+
+    public function actionSetImage($id){
+        $model = new ImageUpload;
+
+        if(Yii::$app->request->isPost){
+            $article = $this->findModel($id);
+            $file = UploadedFile::getInstance($model, 'image');
+
+            if($article->saveImage($model->uploadFile($file, $article->image))){
+                return $this->redirect(['view', 'id'=>$article->id]);
+            }
+        }
+
+        return $this->render('image', ['model'=>$model]);
     }
 }

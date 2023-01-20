@@ -2,7 +2,6 @@
 namespace app\controllers;
 
 use app\models\LoginForm;
-use app\models\User;
 use app\models\SignupForm;
 use Yii;
 use yii\web\Controller;
@@ -24,7 +23,12 @@ class AuthController extends Controller
         }
         $model = new LoginForm();
         if ($model->load(Yii::$app->request->post()) && $model->login()) {
-            return $this->goBack();
+            if(Yii::$app->user->identity->login == 'test@gmail.com'){
+                $this->redirect(array('/admin/index'));
+            } else {
+                $this->redirect(array('/user/index'));
+            }
+            //return $this->goBack();
         }
         $model->password = '';
         return $this->render('/site/login.php', [
